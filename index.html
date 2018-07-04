@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="JQuery/jquery-3.3.1.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <nav class="navbar sticky-top bg-light navbar-expand-sm navbar-light ">
+    <div class="container">
+
+      <a href="/" class="navbar-brand">
+        <img src="images/biriyanilogo.png" style="height:30px;"> Biriyani Gali
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-2">
+            <a class="nav-link active" href="html/menu.html">Menu</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Special Offers</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Store Finder</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Gift Cards</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="carousel slide container text-center" id="myCarousel" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+      <li data-slide-to="1" data-target="#myCarousel"></li>
+      <li data-slide-to="2" data-target="#myCarousel"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active" id="slide1">
+        <img src="images/900x500/sidedish (1).jpeg" style="margin:auto;width:100%" />
+        <div class="carousel-caption">
+          <h4 class="display-4">Crispy</h4>
+          <p class="display-4">Learn how to build your first responsive website with the brand new Twitter Bootstrap 3!</p>
+        </div>
+        <!-- end carousel-caption-->
+      </div>
+      <!-- end item -->
+      <div class="carousel-item" id="slide2">
+        <img src="images/900x500/slide3.jpeg" style="margin:auto;width:100%" />
+        <div class="carousel-caption">
+
+          <h4 class="display-4">Juicy</h4>
+          <p class="display-4">PSD to HTML5 &amp; CSS3 is a popular Udemy course that has helped thousands of aspiring web designers launch their
+            web design career.</p>
+        </div>
+        <!-- end carousel-caption-->
+      </div>
+      <!-- end item -->
+
+      <div class="carousel-item" id="slide3">
+        <img src="images/900x500/taliNorth.jpeg" style="margin:auto;width:100%" />
+        <div class="carousel-caption">
+
+          <h4 class="display-4">Tasty</h4>
+          <p class="display-4">Learn how to buy a perfect domain name and hosting package, and get your website live on the web with ease.</p>
+        </div>
+        <!-- end carousel-caption-->
+      </div>
+
+      <!-- end item -->
+      <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+  <!--END OF CAROUSEL-->
+  <div class="row justify-content-center mt-lg-5 mt-md-5" style="border-radius:5px;" id="bestsellers">
+    <h1 class="display-4">
+      <strong>Best Selling Dishes</strong>
+    </h1>
+  </div>
+  <div id="cookingplate">
+
+
+    <div class="row justify-content-center" id="bestDishes">
+      <div class="col-lg-3 col-md-3  mt-lg-4" id="bestdish1">
+        <h2 class="display-4">
+          <strong>Paneer Kabab</strong>
+        </h2>
+        <button class="btn btn-danger">Order</button>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 mt-lg-4" id="bestdish2">
+        <!-- <img src="images/kabab.jpg" style="height:300px;width:300px;"> -->
+        <h2 class="display-4">
+          <strong>Chicken Fry</strong>
+        </h2>
+        <button class="btn btn-danger">Order</button>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 mt-lg-4" id="bestdish3">
+        <!-- <img src="images/kabab.jpg" style="height:300px;width:300px;"> -->
+        <h2 class="display-4">
+          <strong>Drumstick</strong>
+        </h2>
+        <button class="btn btn-danger">Order</button>
+      </div>
+    </div>
+    <div class="row justify-content-center" id="bestDishes">
+
+      <div class="col-lg-3 col-md-3 col-sm-12 mt-lg-4" id="bestdish4">
+        <!-- <img src="images/kabab.jpg" style="height:300px;width:300px;"> -->
+        <!-- <img src="images/kabab.jpg" style="height:300px;width:300px;"> -->
+        <h2 class="display-4">
+          <strong>Paneer Kabab</strong>
+        </h2>
+        <button class="btn btn-danger">Order</button>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 mt-lg-4" id="bestdish5">
+        <!-- <img src="images/kabab.jpg" style="height:300px;width:300px;"> -->
+        <h2 class="display-4">
+          <strong>Chicken Fry</strong>
+        </h2>
+        <button class="btn btn-danger">Order</button>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 mt-lg-4" id="bestdish6">
+        <!-- <img src="images/kabab.jpg" style="height:300px;width:300px;"> -->
+        <h2 class="display-4">
+          <strong>Drumsticks</strong>
+        </h2>
+        <button class="btn btn-danger">Order</button>
+      </div>
+    </div>
+
+    <div class="row justify-content-center " id="bestDishes">
+      <div class="col-lg-3  col-md-3 col-sm-12 mt-lg-4 mb-lg-4" id="bestdish7">
+        <h2 class="display-4">
+          <strong>Chicken stir</strong>
+        </h2>
+        <button class="btn btn-danger">Order</button>
+      </div>
+
+      <div class="col-lg-3 col-md-3 col-sm-12 mt-lg-4 mb-4" id="bestdish8">
+        <h2 class="display-4">
+          <strong>Chicken Kofty</strong>
+        </h2>
+        <button class="btn btn-danger">Order</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <!--End of Bestsellers-->
+
+  <div class="container mt-5 mb-5">
+    <div class="row" id="video">
+      <div class="col-12">
+        <div id="video">
+          <video src="videos/BBQ with Franklin_ The Brisket.mp4" loop mute controls style="margin-top:10px;margin-right:20px;height:350px;float:left;position: relative;"
+          />
+        </div>
+        <div class="text-left">
+          <h1>Chef Style</h1>
+          <h3>The Art of Flavor offers a fascinating deep-dive into the subtleties of taste … and proposes you put cinnamon in your tomato sauce.</h3>
+          <p>If you’ve ever wondered whether it matters if you use lemon or lime, set aside any embarrassment and read The Art of Flavor. In the new book, artisanal perfumer Mandy Aftel and two-star Michelin chef Daniel Patterson offer a lyrical lexicon for the subtleties of taste—and how to better manipulate it.
+
+              “Mandy brought language to things I didn’t even know how to describe,” Patterson says. “The language of food and verbal language are so different. I always knew these things, but now I think about them in a more structured way. It made me find better taste solutions quicker.”
+              
+              That’s a bold statement coming from a James Beard Award-winning chef; Patterson is the force behind San Francisco’s celebrated minimalist restaurant, Coi. If him writing a cookbook with a perfume alchemist seems unlikely, well, it’s not really.
+              For one, Aftel isn’t just any perfumer. Her handmade, natural scents are sourced from ingredients like roasted seashells, ambergris and wild mushrooms, with some ingredients costing upwards of $10,000 per kilo. Her clients are just as exclusive: Madonna, Liv Tyler and Kate Hudson are among them. She lives in Chez Panisse’s backyard, quite literally; her house shares a fence with the famed restaurant at which Alice Waters has pioneered California cuisine.
+            </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End of Video element-->
+  <div class="row pt-3" id="maps">
+    <div class="container pl-5 mb-2">
+      <h1>Locate Us at </h1>
+    </div>
+    <div class="mb-2 container">
+      <div class="col-12">
+        <div class="mapouter mb-2">
+          <div class="gmap_canvas pl-2">
+            <iframe height="200" width="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=biryani%20house&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          </div>
+          <style>
+            .mapouter {
+              /* text-align: right;
+              height: 200px;
+              width: 200px; */
+            }
+
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              /* height: 300px;
+              width: 300px; */
+            }
+          </style>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="row" id="address">
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <h3>Hyderabad</h3>
+      <p>Address: Soul Space Arena, First Floor, 98, Sky Lark Plazzo, HAL Old Airport Rd, Murugesh Pallya, Bengaluru, Karnataka
+        500072
+      </p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <h3>Bangalore</h3>
+      <p>no.62, Raffles Solitaire Cascade, 1st Main, 7th Block, Koramangala, Bengaluru, Karnataka 560095
+      </p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <h3>Chennai</h3>
+      <p>62, Anna Salai, Ellis Puram, Anna Salai, Triplicane, Chennai, Tamil Nadu 600002
+      </p>
+    </div>
+  </div>
+  <!--End of maps-->
+  <div class="row">
+    <div class="col-sm-12 text-center" id="signup">
+      <h1>Get our latest Updates</h1>
+      <p>Signup for exclusive offers from baap's biryani and gift cards</p>
+      <button class="btn btn-danger">Register/Sign Up</button>
+    </div>
+  </div>
+  <div class="footer" id="footer">
+    <div class="row">
+      <div class="col-6">
+        <ul id="list">
+          <li>News</li>
+          <li>About us</li>
+          <li>Carrers</li>
+          <li>Restaurant List</li>
+        </ul>
+      </div>
+      <div class="col-6 text-right pr-5">
+        <ul id="list-icon">
+          <li>
+
+            <a href="#">
+              <img src="images/instaicon.jpg" style="width:30px;height:30px;" />
+            </a>
+          </li>
+          <li>
+
+            <a href="#">
+              <img src="images/fbicon.png" style="width:30px;height:30px;" />
+            </a>
+          </li>
+          <li>
+
+            <a href="#">
+              <img src="images/twittericon.png" style="width:30px;height:30px;" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
