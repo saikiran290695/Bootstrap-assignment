@@ -29,7 +29,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item mx-2">
-            <a class="nav-link active" href="html/menu.html">Menu</a>
+            <a class="nav-link" href="html/menu.html">Menu</a>
           </li>
           <li class="nav-item mx-2">
             <a class="nav-link" href="#">Special Offers</a>
@@ -109,21 +109,21 @@
         <h2 class="display-4">
           <strong>Paneer Kabab</strong>
         </h2>
-        <button class="btn btn-danger">Order</button>
+        <button data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-12 mt-lg-4" id="bestdish2">
         <!-- <img src="images/kabab.jpg" style="height:300px;width:300px;"> -->
         <h2 class="display-4">
           <strong>Chicken Fry</strong>
         </h2>
-        <button class="btn btn-danger">Order</button>
+        <button data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-12 mt-lg-4" id="bestdish3">
         <!-- <img src="images/kabab.jpg" style="height:300px;width:300px;"> -->
         <h2 class="display-4">
           <strong>Drumstick</strong>
         </h2>
-        <button class="btn btn-danger">Order</button>
+        <button data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
       </div>
     </div>
     <div class="row justify-content-center" id="bestDishes">
@@ -134,21 +134,21 @@
         <h2 class="display-4">
           <strong>Paneer Kabab</strong>
         </h2>
-        <button class="btn btn-danger">Order</button>
+        <button data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-12 mt-lg-4" id="bestdish5">
         <!-- <img src="images/kabab.jpg" style="height:300px;width:300px;"> -->
         <h2 class="display-4">
           <strong>Chicken Fry</strong>
         </h2>
-        <button class="btn btn-danger">Order</button>
+        <button data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-12 mt-lg-4" id="bestdish6">
         <!-- <img src="images/kabab.jpg" style="height:300px;width:300px;"> -->
         <h2 class="display-4">
           <strong>Drumsticks</strong>
         </h2>
-        <button class="btn btn-danger">Order</button>
+        <button data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
       </div>
     </div>
 
@@ -157,21 +157,84 @@
         <h2 class="display-4">
           <strong>Chicken stir</strong>
         </h2>
-        <button class="btn btn-danger">Order</button>
+        <button data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
       </div>
 
       <div class="col-lg-3 col-md-3 col-sm-12 mt-lg-4 mb-4" id="bestdish8">
         <h2 class="display-4">
           <strong>Chicken Kofty</strong>
         </h2>
-        <button class="btn btn-danger">Order</button>
+        <button data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
       </div>
     </div>
   </div>
   </div>
   </div>
   <!--End of Bestsellers-->
+  <div class="modal" id="order">
+    <div class="modal-dialog">
+      <div class="modal-content">
 
+        <div class="modal-header" style="background-color:whitesmoke">
+          <h4 class="modal-title">Order Online</h4>
+          <button class="close" type="button" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="firstname"> Name:</label>
+              <input type="text" class="form-control" id="firstname">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="contact">Contact</label>
+              <input type="text" class="form-control" id="contact">
+            </div>
+            <div class="form-group">
+              <label for="Address">Address</label>
+              <textarea class="form-control" rows="5" id="Address"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="Item">Item</label>
+              <select class="form-control" id="item">
+                <option>Paneer Kabab</option>
+                <option>Chicken Drumsticks</option>
+                <option>Chicken Fry</option>
+                <option>Chicken Stir</option>
+                <option>Dum Biriyani</option>
+                <option>Chicken Moghulai</option>
+              </select>
+
+            </div>
+            <div class="form-group">
+              <label for="Quantity">Quantity</label>
+              <input type="number" class="form-control" id="Quantity">
+            </div>
+            <p>Payment shall be done through COD!!!</p>
+          </form>
+        </div>
+        <div class="modal-footer" style="background-color:whitesmoke">
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#order-success-placed" data-dismiss="modal">place order</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="order-success-placed">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h3 class="display-4">Order Successfully Placed</h3>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container mt-5 mb-5">
     <div class="row" id="video">
       <div class="col-12">
@@ -181,14 +244,21 @@
         </div>
         <div class="text-left">
           <h1>Chef Style</h1>
-          <h3>The Art of Flavor offers a fascinating deep-dive into the subtleties of taste … and proposes you put cinnamon in your tomato sauce.</h3>
-          <p>If you’ve ever wondered whether it matters if you use lemon or lime, set aside any embarrassment and read The Art of Flavor. In the new book, artisanal perfumer Mandy Aftel and two-star Michelin chef Daniel Patterson offer a lyrical lexicon for the subtleties of taste—and how to better manipulate it.
-
-              “Mandy brought language to things I didn’t even know how to describe,” Patterson says. “The language of food and verbal language are so different. I always knew these things, but now I think about them in a more structured way. It made me find better taste solutions quicker.”
-              
-              That’s a bold statement coming from a James Beard Award-winning chef; Patterson is the force behind San Francisco’s celebrated minimalist restaurant, Coi. If him writing a cookbook with a perfume alchemist seems unlikely, well, it’s not really.
-              For one, Aftel isn’t just any perfumer. Her handmade, natural scents are sourced from ingredients like roasted seashells, ambergris and wild mushrooms, with some ingredients costing upwards of $10,000 per kilo. Her clients are just as exclusive: Madonna, Liv Tyler and Kate Hudson are among them. She lives in Chez Panisse’s backyard, quite literally; her house shares a fence with the famed restaurant at which Alice Waters has pioneered California cuisine.
-            </p>
+          <h3>The Art of Flavor offers a fascinating deep-dive into the subtleties of taste … and proposes you put cinnamon in
+            your tomato sauce.</h3>
+          <p>If you’ve ever wondered whether it matters if you use lemon or lime, set aside any embarrassment and read The Art
+            of Flavor. In the new book, artisanal perfumer Mandy Aftel and two-star Michelin chef Daniel Patterson offer
+            a lyrical lexicon for the subtleties of taste—and how to better manipulate it. “Mandy brought language to things
+            I didn’t even know how to describe,” Patterson says. “The language of food and verbal language are so different.
+            I always knew these things, but now I think about them in a more structured way. It made me find better taste
+            solutions quicker.” That’s a bold statement coming from a James Beard Award-winning chef; Patterson is the force
+            behind San Francisco’s celebrated minimalist restaurant, Coi. If him writing a cookbook with a perfume alchemist
+            seems unlikely, well, it’s not really. For one, Aftel isn’t just any perfumer. Her handmade, natural scents are
+            sourced from ingredients like roasted seashells, ambergris and wild mushrooms, with some ingredients costing
+            upwards of $10,000 per kilo. Her clients are just as exclusive: Madonna, Liv Tyler and Kate Hudson are among
+            them. She lives in Chez Panisse’s backyard, quite literally; her house shares a fence with the famed restaurant
+            at which Alice Waters has pioneered California cuisine.
+          </p>
         </div>
       </div>
     </div>
@@ -249,7 +319,58 @@
     <div class="col-sm-12 text-center" id="signup">
       <h1>Get our latest Updates</h1>
       <p>Signup for exclusive offers from baap's biryani and gift cards</p>
-      <button class="btn btn-danger">Register/Sign Up</button>
+      <button data-toggle="modal" type="button" data-target="#register" class="btn btn-danger">Register/Sign Up</button>
+    </div>
+  </div>
+  <div class="modal" id="register">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header" style="background-color:whitesmoke">
+          <h4 class="modal-title">Register</h4>
+          <button class="close" type="button" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="firstname">First Name:</label>
+              <input type="text" class="form-control" id="firstname">
+            </div>
+            <div class="form-group">
+              <label for="lastname">Last Name:</label>
+              <input type="text" class="form-control" id="lastname">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="contact">Contact</label>
+              <input type="text" class="form-control" id="contact">
+            </div>
+            <div class="form-group">
+              <label for="Address">Address</label>
+              <textarea class="form-control" rows="5" id="Address"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer" style="background-color:whitesmoke">
+          <button type="button" data-toggle="modal" data-target="#register-success" data-dismiss="modal" class="btn btn-success">submit</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="register-success">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h4 class="display-4">Successfully Registered</h4>
+        </div>
+        <div class="modal-footer" style="background-color:whitesmoke">
+          <button class="btn btn-success" type="button" data-dismiss="modal">close</button>
+        </div>
+      </div>
     </div>
   </div>
   <div class="footer" id="footer">

@@ -113,7 +113,8 @@ background-color: whitesmoke;
     display:inline;
 }
 #address{
-    padding-left: 170px;
+    padding-left: 100px;
+    padding-right: 100px;
     background-color: whitesmoke;
     
 }
