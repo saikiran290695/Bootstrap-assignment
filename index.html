@@ -42,7 +42,7 @@
       </div>
     </div>
   </nav><!--End of Nav bar-->
-  <div class="carousel slide container text-center" id="myCarousel" data-ride="carousel">
+  <section class="carousel slide container text-center" id="myCarousel" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
@@ -89,16 +89,20 @@
         <span class="carousel-control-next-icon"></span>
       </a>
     </div>
-  </div>
-  <!--END OF CAROUSEL-->
-  <div class="row justify-content-center mt-lg-5 mt-md-5" style="border-radius:5px;" id="bestsellers">
+  </section><!--END OF CAROUSEL-->
+  <!-- Visible only on small devices -->
+  <section class="d-sm-none text-center mt-1 bg-success" style="border-radius: 5px;margin:0px 10px auto;">
+    <h1><a style="color:white" href="#">Call Us!</a></h1>
+  </section><!-- end well-small -->
+  
+  <section class="row justify-content-center mt-lg-5 mt-md-5" style="border-radius:5px;" id="bestsellers">
     <h1 class="display-4">
       <strong>Best Selling Dishes</strong>
     </h1>
-  </div>
-  <div id="cookingplate">
+  </section>
+  <section id="cookingplate">
     <div class="row justify-content-center" id="bestDishes">
-      <div class="col-lg-3 col-md-3  mt-lg-4" id="bestdish1">
+      <div class="col-lg-3 col-md-3 mt-lg-4" id="bestdish1">
         <h2 class="display-4">
           <strong>Paneer Kabab</strong>
         </h2>
@@ -156,9 +160,7 @@
         <button data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
       </div>
     </div>
-  </div>
-  </div>
-  </div>
+  </section>
   <!--End of Bestsellers-->
   <div class="modal" id="order">
     <div class="modal-dialog">
@@ -215,7 +217,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
-          <h3 class="display-4">Order Successfully Placed</h3>
+          <h3>Order Successfully Placed</h3>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
@@ -223,11 +225,11 @@
       </div>
     </div>
   </div><!--End of placing order success pop -up -->
-  <div class="container mt-5 mb-5">
+  <section class="container mt-5 mb-5">
     <div class="row" id="video-sec">
       <div class="col-12">
         <div id="video">
-          <video src="videos/BBQ with Franklin_ The Brisket.mp4" loop mute/>
+          <video src="videos/BBQ with Franklin_ The Brisket.mp4" loop autoplay mute/>
         </div>
         <div class="text-left" >
           <h1>Chef Style</h1>
@@ -249,9 +251,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- End of Video element-->
-  <div class="row pt-3" id="maps">
+  <section class="row pt-3" id="maps">
     <div class="container pl-5 mb-2">
       <h1>Locate Us at </h1>
     </div>
@@ -273,8 +275,8 @@
 
       </div>
     </div>
-  </div><!--end of maps-->
-  <div class="row" id="address">
+  </section><!--end of maps-->
+  <section class="row" id="address">
     <div class="col-lg-4 col-md-4 col-sm-12">
       <h3>Hyderabad</h3>
       <p>Soul Space Arena, First Floor, 98, Sky Lark Plazzo, HAL Old Airport Rd, Murugesh Pallya, Bengaluru, Karnataka
@@ -291,15 +293,15 @@
       <p>62, Anna Salai, Ellis Puram, Anna Salai, Triplicane, Chennai, Tamil Nadu 600002
       </p>
     </div>
-  </div>
+  </section>
   <!--End of maps-->
-  <div class="row">
+  <section class="row">
     <div class="col-sm-12 text-center" id="signup">
       <h1>Get our latest Updates</h1>
       <p>Signup for exclusive offers from baap's biryani and gift cards</p>
       <button data-toggle="modal" type="button" data-target="#register" class="btn btn-danger">Register/Sign Up</button>
     </div>
-  </div><!--end of Register block-->
+  </section><!--end of Register block-->
   <div class="modal" id="register">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -339,18 +341,18 @@
       </div>
     </div>
   </div><!--end of register form-->
-  <section class="modal" id="register-success">
+  <div class="modal" id="register-success">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
-          <h4 class="display-4">Successfully Registered</h4>
+          <h3 >Successfully Registered</h3>
         </div>
         <div class="modal-footer" style="background-color:whitesmoke">
           <button class="btn btn-success" type="button" data-dismiss="modal">close</button>
         </div>
       </div>
     </div>
-  </section><!--end of register success pop up-->
+  </div><!--end of register success pop up-->
   <section class="footer" id="footer">
     <div class="row">
       <div class="col-6">

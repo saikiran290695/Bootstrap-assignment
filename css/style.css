@@ -128,8 +128,17 @@ background-color: whitesmoke;
         margin-top:12px;
         margin-left:-10px;
     }
+    .modal{
+        width: 400px;
+        height: 500px;
+        font-size: 20px;
+        align-content: center;
+    } 
+    .modal-dialog h3{
+        font-size:20px;
+    }
 }    
-@media(max-width: 400px){
+/* @media(max-width: 320px){
     video{
         width: 100px;
         float:left;
@@ -139,16 +148,26 @@ background-color: whitesmoke;
     }  
     #bestdish1,#bestdish2,#bestdish3,#bestdish4,#bestdish5,#bestdish6,#bestdish7,#bestdish8{
         margin:0px;
+        padding:0px 20px 0px 20px;
+        width:100%;
     }
-}
-@media(max-width: 470px)
+} */
+
+@media(max-width:320px)
 {
+   .modal{
+       width: 250px;
+       height: 300px;
+       font-size: 10px;
+   } 
+   .modal-dialog h3{
+       font-size:20px;
+   }
    video{
        width: 300px;
        padding-right:10px;
        margin: 0px auto;
        float:none;
-       
        margin-bottom:5px;
    }
    #maps{
@@ -180,8 +199,9 @@ background-color: whitesmoke;
    #bestdish1{
        margin-top:10px;
    }   
- #bestdish1,#bestdish2,#bestdish3,#bestdish4,#bestdish5,#bestdish6,#bestdish7,#bestdish8{
+   #bestdish1,#bestdish2,#bestdish3,#bestdish4,#bestdish5,#bestdish6,#bestdish7,#bestdish8{
      width:100%;
+     /* padding-left:50px; */
  }
  #cookingplate button{
     margin-top:120px;
@@ -237,4 +257,8 @@ p{
         padding-left: 180px;
         padding-right:150px;
     }   
+    #bestdish1,#bestdish2,#bestdish3,#bestdish4,#bestdish5,#bestdish6,#bestdish7,#bestdish8{
+        width:100%;
+        padding-left:60px;
+    }
 }
