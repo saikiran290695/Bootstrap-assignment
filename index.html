@@ -5,43 +5,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="JQuery/jquery-3.3.1.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="library/jquery/jquery-3.3.1.js"></script>
+  <script src="library/bootstrap/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <title>Document</title>
 </head>
 
-<body style="font-family: 'Playfair Display', serif">
+<body>
   <nav class="navbar sticky-top bg-light navbar-expand-sm navbar-light ">
     <div class="container">
-      <a href="/" class="navbar-brand">
-        <img src="images/biriyanilogo.png" style="height:30px;"> Biriyani Gali
+      <a aria-label="link" href="/" class="navbar-brand">
+        <img src="images/biriyanilogo.png" alt="biriyanilogo" id="logo"> Biriyani Gali
       </a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+      <button role="nav-collapse" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item mx-2">
-            <a class="nav-link" href="html/menu.html">Menu</a>
+            <a class="nav-link" aria-label="link" href="html/menu.html">Menu</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#">Special Offers</a>
+            <a class="nav-link" aria-label="link" href="#">Special Offers</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#">Store Finder</a>
+            <a class="nav-link" aria-label="link" href="#">Store Finder</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#">Gift Cards</a>
+            <a class="nav-link" aria-label="link" href="#">Gift Cards</a>
           </li>
         </ul>
       </div>
     </div>
-  </nav><!--End of Nav bar-->
+  </nav>
+  <!--End of Nav bar-->
   <section class="carousel slide container text-center" id="myCarousel" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -53,7 +54,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="carousel-item active" id="slide1">
-        <img src="images/900x500/sidedish (1).jpeg" style="margin:auto;width:100%" />
+        <img src="images/900x500/sidedish (1).jpeg" alt="dish1" />
         <div class="carousel-caption">
           <h4 class="display-4">Crispy</h4>
           <p class="display-4">Learn how to build your first responsive website with the brand new Twitter Bootstrap 3!</p>
@@ -62,7 +63,7 @@
       </div>
       <!-- end item -->
       <div class="carousel-item" id="slide2">
-        <img src="images/900x500/slide3.jpeg" style="margin:auto;width:100%" />
+        <img src="images/900x500/slide3.jpeg" alt="dish2" />
         <div class="carousel-caption">
           <h4 class="display-4">Juicy</h4>
           <p class="display-4">PSD to HTML5 &amp; CSS3 is a popular Udemy course that has helped thousands of aspiring web designers launch their
@@ -73,7 +74,7 @@
       <!-- end item -->
 
       <div class="carousel-item" id="slide3">
-        <img src="images/900x500/taliNorth.jpeg" style="margin:auto;width:100%" />
+        <img src="images/900x500/taliNorth.jpeg" alt="dish3" />
         <div class="carousel-caption">
           <h4 class="display-4">Tasty</h4>
           <p class="display-4">Learn how to buy a perfect domain name and hosting package, and get your website live on the web with ease.</p>
@@ -82,20 +83,24 @@
       </div>
 
       <!-- end item -->
-      <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+      <a class="carousel-control-prev" aria-label="link" href="#myCarousel" data-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </a>
-      <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+      <a class="carousel-control-next" aria-label="link" href="#myCarousel" data-slide="next">
         <span class="carousel-control-next-icon"></span>
       </a>
     </div>
-  </section><!--END OF CAROUSEL-->
+  </section>
+  <!--END OF CAROUSEL-->
   <!-- Visible only on small devices -->
-  <section class="d-sm-none text-center mt-1 bg-success" style="border-radius: 5px;margin:0px 10px auto;">
-    <h1><a style="color:white" href="#">Call Us!</a></h1>
-  </section><!-- end well-small -->
-  
-  <section class="row justify-content-center mt-lg-5 mt-md-5" style="border-radius:5px;" id="bestsellers">
+  <section class="d-sm-none text-center mt-1 bg-success" id="call">
+    <h1>
+      <a aria-label="link" href="#">Call Us!</a>
+    </h1>
+  </section>
+  <!-- end well-small -->
+
+  <section class="row justify-content-center mt-lg-5 mt-md-5" id="bestsellers">
     <h1 class="display-4">
       <strong>Best Selling Dishes</strong>
     </h1>
@@ -106,20 +111,20 @@
         <h2 class="display-4">
           <strong>Paneer Kabab</strong>
         </h2>
-        <button data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
+        <button role="order" data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-12 mt-lg-4" id="bestdish2">
         <h2 class="display-4">
           <strong>Chicken Fry</strong>
         </h2>
-        <button data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
+        <button role="order" data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-12 mt-lg-4" id="bestdish3">
-    
+
         <h2 class="display-4">
           <strong>Drumstick</strong>
         </h2>
-        <button data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
+        <button role="order" data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
       </div>
     </div>
     <div class="row justify-content-center" id="bestDishes">
@@ -128,21 +133,21 @@
         <h2 class="display-4">
           <strong>Chicken tikka</strong>
         </h2>
-        <button data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
+        <button role="order" data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-12 mt-lg-4" id="bestdish5">
-    
+
         <h2 class="display-4">
           <strong>Chicken stir</strong>
         </h2>
-        <button data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
+        <button role="order" data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-12 mt-lg-4" id="bestdish6">
-     
+
         <h2 class="display-4">
           <strong>Dum Biriyani</strong>
         </h2>
-        <button data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
+        <button role="order" data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
       </div>
     </div>
     <div class="row justify-content-center " id="bestDishes">
@@ -150,14 +155,14 @@
         <h2 class="display-4">
           <strong>Chicken mughulai</strong>
         </h2>
-        <button data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
+        <button role="order" data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
       </div>
 
       <div class="col-lg-3 col-md-3 col-sm-12 mt-lg-4 mb-4" id="bestdish8">
         <h2 class="display-4">
           <strong>Chicken Kofty</strong>
         </h2>
-        <button data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
+        <button role="order" data-toggle="modal" data-target="#order" class="btn btn-danger">Order</button>
       </div>
     </div>
   </section>
@@ -165,9 +170,9 @@
   <div class="modal" id="order">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header" style="background-color:whitesmoke">
+        <div class="modal-header">
           <h4 class="modal-title">Order Online</h4>
-          <button class="close" type="button" data-dismiss="modal">&times;</button>
+          <button class="close" role="close" type="button" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
           <form>
@@ -206,13 +211,14 @@
             <p>Payment shall be done through COD!!!</p>
           </form>
         </div>
-        <div class="modal-footer" style="background-color:whitesmoke">
-          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#order-success-placed" data-dismiss="modal">place order</button>
-          <button type="button" class="btn btn-danger" data-dismiss="modal">cancel</button>
+        <div class="modal-footer">
+          <button type="button" role="success" class="btn btn-success" data-toggle="modal" data-target="#order-success-placed" data-dismiss="modal">place order</button>
+          <button type="button" role="cancel" class="btn btn-danger" data-dismiss="modal">cancel</button>
         </div>
       </div>
     </div>
-  </div><!--End of Place order form-->
+  </div>
+  <!--End of Place order form-->
   <div class="modal" id="order-success-placed">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -220,18 +226,19 @@
           <h3>Order Successfully Placed</h3>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+          <button type="button" role="cancel" class="btn btn-danger" data-dismiss="modal">close</button>
         </div>
       </div>
     </div>
-  </div><!--End of placing order success pop -up -->
+  </div>
+  <!--End of placing order success pop -up -->
   <section class="container mt-5 mb-5">
     <div class="row" id="video-sec">
       <div class="col-12">
         <div id="video">
           <video src="videos/BBQ with Franklin_ The Brisket.mp4" loop autoplay mute/>
         </div>
-        <div class="text-left" >
+        <div class="text-left">
           <h1>Chef Style</h1>
           <h3>The Art of Flavor offers a fascinating deep-dive into the subtleties of taste … and proposes you put cinnamon in
             your tomato sauce.</h3>
@@ -261,7 +268,7 @@
       <div class="col-12">
         <div class="mapouter mb-2">
           <div class="gmap_canvas pl-2">
-            <iframe height="200" width="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=biryani%20house&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            <iframe title="maps" height="200" width="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=biryani%20house&t=&z=13&ie=UTF8&iwloc=&output=embed"
               frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
           </div>
           <style>
@@ -275,12 +282,12 @@
 
       </div>
     </div>
-  </section><!--end of maps-->
+  </section>
+  <!--end of maps-->
   <section class="row" id="address">
     <div class="col-lg-4 col-md-4 col-sm-12">
       <h3>Hyderabad</h3>
-      <p>Soul Space Arena, First Floor, 98, Sky Lark Plazzo, HAL Old Airport Rd, Murugesh Pallya, Bengaluru, Karnataka
-        500072
+      <p>Soul Space Arena, First Floor, 98, Sky Lark Plazzo, HAL Old Airport Rd, Murugesh Pallya, Bengaluru, Karnataka 500072
       </p>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12">
@@ -299,16 +306,17 @@
     <div class="col-sm-12 text-center" id="signup">
       <h1>Get our latest Updates</h1>
       <p>Signup for exclusive offers from baap's biryani and gift cards</p>
-      <button data-toggle="modal" type="button" data-target="#register" class="btn btn-danger">Register/Sign Up</button>
+      <button data-toggle="modal" role="register" type="button" data-target="#register" class="btn btn-danger">Register/Sign Up</button>
     </div>
-  </section><!--end of Register block-->
+  </section>
+  <!--end of Register block-->
   <div class="modal" id="register">
     <div class="modal-dialog">
       <div class="modal-content">
 
-        <div class="modal-header" style="background-color:whitesmoke">
+        <div class="modal-header">
           <h4 class="modal-title">Register</h4>
-          <button class="close" type="button" data-dismiss="modal">&times;</button>
+          <button class="close" type="button" role="registered" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
           <form>
@@ -334,25 +342,27 @@
             </div>
           </form>
         </div>
-        <div class="modal-footer" style="background-color:whitesmoke">
-          <button type="button" data-toggle="modal" data-target="#register-success" data-dismiss="modal" class="btn btn-success">submit</button>
-          <button type="button" class="btn btn-danger" data-dismiss="modal">cancel</button>
+        <div class="modal-footer">
+          <button type="button" role="successbutton" data-toggle="modal" data-target="#register-success" data-dismiss="modal" class="btn btn-success">submit</button>
+          <button type="button" role="closebutton" class="btn btn-danger" data-dismiss="modal">cancel</button>
         </div>
       </div>
     </div>
-  </div><!--end of register form-->
+  </div>
+  <!--end of register form-->
   <div class="modal" id="register-success">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
-          <h3 >Successfully Registered</h3>
+          <h3>Successfully Registered</h3>
         </div>
-        <div class="modal-footer" style="background-color:whitesmoke">
-          <button class="btn btn-success" type="button" data-dismiss="modal">close</button>
+        <div class="modal-footer">
+          <button class="btn btn-success" role="registered" type="button" data-dismiss="modal">close</button>
         </div>
       </div>
     </div>
-  </div><!--end of register success pop up-->
+  </div>
+  <!--end of register success pop up-->
   <section class="footer" id="footer">
     <div class="row">
       <div class="col-6">
@@ -366,24 +376,25 @@
       <div class="col-6 text-right pr-5">
         <ul id="list-icon">
           <li>
-            <a href="#">
-              <img src="images/instaicon.jpg" style="width:30px;height:30px;" />
+            <a aria-label="link" href="#">
+              <img src="images/instaicon.jpg" alt="instalogo" id="icon" />
             </a>
           </li>
           <li>
-            <a href="#">
-              <img src="images/fbicon.png" style="width:30px;height:30px;" />
+            <a aria-label="link" href="#">
+              <img src="images/fbicon.png" alt="fbicon" id="icon" />
             </a>
           </li>
           <li>
-            <a href="#">
-              <img src="images/twittericon.png" style="width:30px;height:30px;" />
+            <a aria-label="link" href="#">
+              <img src="images/twittericon.png" alt="twittericon" id="icon" />
             </a>
           </li>
         </ul>
       </div>
     </div>
-  </section><!--end of footer-->
+  </section>
+  <!--end of footer-->
 
 </body>
 

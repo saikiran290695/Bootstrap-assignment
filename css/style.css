@@ -1,264 +1,306 @@
-#searchInput{
-    width: 200px;
+#searchInput {
+  width: 200px;
 }
-.body{
-    margin: 0px;
+
+#logo {
+  height: 30px;
 }
-.nav{
-    height:100px;
+
+body {
+  margin: 0px;
+  font-family: 'Playfair Display', serif;
 }
-#maps{
+
+.nav {
+  height: 100px;
+}
+
+#maps {
+  background-color: whitesmoke;
+}
+
+#bestdish1, #bestdish2, #bestdish3, #bestdish4, #bestdish5, #bestdish6, #bestdish7, #bestdish8 {
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  color: whitesmoke;
+  margin-right: 10px;
+  min-width: 200px;
+  background-position: center;
+}
+
+#call {
+  color: white;
+  border-radius: 5px;
+  margin: 0px 10px auto;
+}
+
+#call a {
+  color: white;
+}
+
+#slide1 p, #slide2 p, #slide3 p {
+  font-size: 18px;
+}
+
+#slide1 img, #slide2 img, #slide3 img {
+  font-size: 18px;
+  margin: auto;
+  width: 100%
+}
+
+#bestdish1 {
+  background-image: url(../images/300x300/kabab.jpeg);
+}
+
+#bestdish2 {
+  background-image: url(../images/300x300/chickenstri.jpeg);
+}
+
+#bestdish3 {
+  background-image: url(../images/300x300/drumsticks.jpeg);
+}
+
+#bestdish4 {
+  background-image: url(../images/300x300/kraftrecipe.jpeg);
+}
+
+#bestdish5 {
+  background-image: url(../images/300x300/chickenpiece.jpeg);
+}
+
+#bestdish6 {
+  background-image: url(../images/300x300/chickendum.jpeg);
+}
+
+#bestdish7 {
+  background-image: url(../images/300x300/chickenmughulai.jpeg);
+}
+
+#bestdish8 {
+  background-image: url(../images/300x300/biryani.jpeg);
+}
+
+#cookingplate {
+  background-color: whitesmoke;
+}
+
+#cookingplate h2 {
+  font-size: 30px;
+}
+
+#cookingplate button {
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+#bestsellers {
+  background: rgb(226, 226, 226);
+  border-radius: 5px;
+}
+
+#bestsellers h1 {
+  font-size: 30px;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+#signup {
+  background-image: url(../images/Darkwoodbg.jpg);
+  min-height: 300px;
+  padding: 50px 0;
+  color: white;
+}
+
+#footer {
+  background: rgb(64, 65, 66);
+}
+
+#footer ul {
+  padding: 10px 0;
+}
+
+#footer ul li {
+  display: inline;
+  color: white;
+}
+
+#footer ul li:nth-child(1) {
+  margin-left: 20px;
+}
+
+#footer ul li:after {
+  content: "   |";
+}
+
+#footer ul li:last-child:after {
+  content: "";
+}
+
+#footer-icons ul li {
+  display: inline;
+}
+
+#icon {
+  width: 30px;
+  height: 30px;
+}
+
+#address {
+  padding-left: 170px;
+  padding-right: 155px;
+  background-color: whitesmoke;
+}
+
+.modal-header {
+  background-color: whitesmoke;
+}
+
+.modal-footer {
+  background-color: whitesmoke;
+}
+
+@media (max-width: 770px) {
+  #cookingplate button {
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+  #cookingplate h2 {
+    font-size: 20px;
+  }
+  #bestdish1, #bestdish2, #bestdish3, #bestdish4, #bestdish5, #bestdish6, #bestdish7, #bestdish8 {
+    margin-bottom: 10px;
+  }
+  #address {
+    padding-left: 50px;
     background-color: whitesmoke;
-}
-#bestdish1,#bestdish2,#bestdish3,#bestdish4,#bestdish5,#bestdish6,#bestdish7,#bestdish8{
-    width:200px;
-    height:200px;
-    background-repeat: no-repeat;
-    color: whitesmoke;
-    margin-right:10px;
-    min-width:200px;
-    background-position: center;
-}
-
-#slide1 p, #slide2 p, #slide3 p{
-    font-size:18px;
-}
-#bestdish1{
-background-image: url(../images/300x300/kabab.jpeg);
-}
-#bestdish2{
-    background-image: url(../images/300x300/chickenstri.jpeg);
-}
-#bestdish3{
-    background-image: url(../images/300x300/drumsticks.jpeg);
-}
-#bestdish4{
-    background-image: url(../images/300x300/kraftrecipe.jpeg);
-}
-#bestdish5{
-   background-image: url(../images/300x300/chickenpiece.jpeg);
-}
-#bestdish6{
-    background-image: url(../images/300x300/chickendum.jpeg);
-}
-#bestdish7{
-    background-image: url(../images/300x300/chickenmughulai.jpeg);
-}
-#bestdish8{
-    background-image: url(../images/300x300/biryani.jpeg);
-}
-#cookingplate{
-background-color: whitesmoke;
-}
-#cookingplate h2{
-    font-size: 30px;
-}
-#cookingplate button{
-    margin-top:100px;
-    margin-left:200px;
-}
-#bestsellers{
-    background:rgb(226, 226, 226);
-}
-#bestsellers h1{
-    font-size: 30px;
-}
-.row{
-    margin-right:0px;
-    margin-left:0px;
-}
-#signup{
-    background-image: url(../images/Darkwoodbg.jpg);
-    
-    min-height: 300px;
-    padding: 50px 0;
-    color: white;
-}
-#footer{
-    background: rgb(64, 65, 66);
-}
-#footer ul{
-    padding: 10px 0;
-}
-#footer ul li{
-    
-    display: inline;
-    color: white;
-}
-#footer ul li:nth-child(1){
-     margin-left: 20px; 
-   
+  }
+  video {
+    width: 300px;
+    float: left;
+    padding-right: 10px;
+    margin-top: 12px;
+    margin-left: -10px;
+  }
+  .modal {
+    width: 400px;
+    height: 500px;
+    font-size: 20px;
+    align-content: center;
+  }
+  .modal-dialog h3 {
+    font-size: 20px;
+  }
 }
 
-#footer ul li:after{
-    content: "   |";
-}
-#footer ul li:last-child:after{
-    content: "";
-}
-
-#footer-icons ul li{
-    display:inline;
-}
-#address{
-    padding-left: 170px;
-    padding-right: 155px;
-    background-color: whitesmoke;
-    
-}
-@media (max-width: 770px){
-    #cookingplate button{
-        margin-top:100px;
-        margin-left:100px;
-    }
-    #cookingplate h2{
-        font-size: 20px;
-    }
-    #bestdish1,#bestdish2,#bestdish3,#bestdish4,#bestdish5,#bestdish6,#bestdish7,#bestdish8{
-        margin-bottom:10px;
-    }
-    #address{
-        padding-left: 50px;
-        background-color: whitesmoke;       
-    }   
-    video{
-        width: 300px;
-        float: left;
-        padding-right:10px;
-        margin-top:12px;
-        margin-left:-10px;
-    }
-    .modal{
-        width: 400px;
-        height: 500px;
-        font-size: 20px;
-        align-content: center;
-    } 
-    .modal-dialog h3{
-        font-size:20px;
-    }
-}    
-/* @media(max-width: 320px){
-    video{
-        width: 100px;
-        float:left;
-        padding-right:10px;
-        margin-top:-25px;
-        margin-left:-10px;
-    }  
-    #bestdish1,#bestdish2,#bestdish3,#bestdish4,#bestdish5,#bestdish6,#bestdish7,#bestdish8{
-        margin:0px;
-        padding:0px 20px 0px 20px;
-        width:100%;
-    }
-} */
-
-@media(max-width:320px)
-{
-   .modal{
-       width: 250px;
-       height: 300px;
-       font-size: 10px;
-   } 
-   .modal-dialog h3{
-       font-size:20px;
-   }
-   video{
-       width: 300px;
-       padding-right:10px;
-       margin: 0px auto;
-       float:none;
-       margin-bottom:5px;
-   }
-   #maps{
-       margin-left: -20px;
-   }
-   #video{
-    margin-left:-10px;
-   } 
-   #address{
-       margin-left:-20px;
-   }
-   #address{
-    padding-left: 30px;
-    background-color: whitesmoke;       
-    } 
-    #myCarousel h4
-    {
-        font-size: 20px;
-    } 
-    #myCarousel p{
-        font-size:10px;
-    }
-   #bestsellers{
-       margin-top:10px;   
-   }
-   #bestsellers h1{
-       font-size: 25px;
-   }
-   #bestdish1{
-       margin-top:10px;
-   }   
-   #bestdish1,#bestdish2,#bestdish3,#bestdish4,#bestdish5,#bestdish6,#bestdish7,#bestdish8{
-     width:100%;
-     /* padding-left:50px; */
- }
- #cookingplate button{
-    margin-top:120px;
-    margin-left:200px;
-}
-
-h4{
-    font-size:15px;
-}
-h2{
-    font-size:20px;
-}
-h1{
-    font-size: 25px;
-}
-p{
-    font-size:10px;
-}
-#signup h1,#singup p{
-     margin-top:50px;
- } 
- .footer ul li{
+@media(max-width:320px) {
+  .modal {
+    width: 250px;
+    height: 300px;
     font-size: 10px;
+  }
+  .modal-dialog h3 {
+    font-size: 20px;
+  }
+  video {
+    width: 300px;
+    padding-right: 10px;
+    margin: 0px auto;
+    float: none;
+    margin-bottom: 5px;
+  }
+  #maps {
+    margin-left: -20px;
+  }
+  #video {
+    margin-left: -10px;
+  }
+  #address {
+    margin-left: -20px;
+  }
+  #address {
+    padding-left: 30px;
+    background-color: whitesmoke;
+  }
+  #myCarousel h4 {
+    font-size: 20px;
+  }
+  #myCarousel p {
+    font-size: 10px;
+  }
+  #bestsellers {
+    margin-top: 10px;
+  }
+  #bestsellers h1 {
+    font-size: 25px;
+  }
+  #bestdish1 {
+    margin-top: 10px;
+  }
+  #bestdish1, #bestdish2, #bestdish3, #bestdish4, #bestdish5, #bestdish6, #bestdish7, #bestdish8 {
+    width: 100%;
+    /* padding-left:50px; */
+  }
+  #cookingplate button {
+    margin-top: 120px;
+    margin-left: 200px;
+  }
+  h4 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 10px;
+  }
+  #signup h1, #singup p {
+    margin-top: 50px;
+  }
+  .footer ul li {
+    font-size: 10px;
+  }
+  #list-icon li a img {
+    height: 10px;
+    width: 10px;
+  }
 }
-#list-icon li a img{
-    height:10px;
-    width:10px;
+
+@media(min-width: 1024px) {
+  video {
+    width: 500px;
+    float: left;
+    margin: 0px auto;
+    padding-right: 10px;
+    margin-top: 13px;
+    margin-left: -10px;
+  }
+  #cookingplate h2 {
+    font-size: 25px;
+  }
+  #cookingplate button {
+    margin-top: 120px;
+    margin-left: 170px;
+  }
+  #address {
+    padding-left: 100px;
+    padding-right: 50px;
+  }
 }
-}
-@media(min-width: 1024px){
-    video{
-        width: 500px;
-        float:left;
-        margin: 0px auto;
-        padding-right:10px;
-        margin-top:13px;
-        margin-left:-10px;
-    }
-    #cookingplate h2{
-        font-size: 25px;
-    }
-    #cookingplate button{
-        margin-top:120px;
-        margin-left:170px;
-    }   
-    #address{
-        padding-left: 100px;
-        padding-right:50px;
-    }   
-}
-@media(min-width: 1440px){
-    #address{
-        padding-left: 180px;
-        padding-right:150px;
-    }   
-    #bestdish1,#bestdish2,#bestdish3,#bestdish4,#bestdish5,#bestdish6,#bestdish7,#bestdish8{
-        width:100%;
-        padding-left:60px;
-    }
+
+@media(min-width: 1440px) {
+  #address {
+    padding-left: 180px;
+    padding-right: 150px;
+  }
+  #bestdish1, #bestdish2, #bestdish3, #bestdish4, #bestdish5, #bestdish6, #bestdish7, #bestdish8 {
+    width: 100%;
+    padding-left: 60px;
+  }
 }
