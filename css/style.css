@@ -14,9 +14,8 @@
     width:200px;
     height:200px;
     background-repeat: no-repeat;
-    color: white;
+    color: whitesmoke;
     margin-right:10px;
-    /* margin-top:40px; */
     min-width:200px;
 }
 
@@ -31,16 +30,12 @@ background-image: url(../images/300x300/kabab.jpeg);
 }
 #bestdish3{
     background-image: url(../images/300x300/drumsticks.jpeg);
-  
 }
 #bestdish4{
     background-image: url(../images/300x300/kraftrecipe.jpeg);
-    
-    
 }
 #bestdish5{
    background-image: url(../images/300x300/chickenpiece.jpeg);
-  
 }
 #bestdish6{
     background-image: url(../images/300x300/chickendum.jpeg);
@@ -52,26 +47,19 @@ background-image: url(../images/300x300/kabab.jpeg);
     background-image: url(../images/300x300/biryani.jpeg);
 }
 #cookingplate{
-    /* background-image: url(../images/cookingplate.jpg); */
 background-color: whitesmoke;
 }
 #cookingplate h2{
     font-size: 30px;
-    
 }
 #cookingplate button{
     margin-top:100px;
     margin-left:200px;
 }
-/* .navbar{
-    background-image:url(../images/Darkwoodbg.jpg);
-} */
 #bestsellers{
     background:rgb(226, 226, 226);
-    /* background-image:url(../images/Darkwoodbg.jpg); */
 }
 #bestsellers h1{
-
     font-size: 30px;
 }
 .row{
@@ -88,9 +76,7 @@ background-color: whitesmoke;
     background: rgb(64, 65, 66);
 }
 #footer ul{
-    
     padding: 10px 0;
-    
 }
 #footer ul li{
     
@@ -113,12 +99,12 @@ background-color: whitesmoke;
     display:inline;
 }
 #address{
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 170px;
+    padding-right: 155px;
     background-color: whitesmoke;
     
 }
-@media (max-width: 768px){
+@media (max-width: 770px){
     #cookingplate button{
         margin-top:100px;
         margin-left:100px;
@@ -134,11 +120,16 @@ background-color: whitesmoke;
         background-color: whitesmoke;       
     }   
 }    
-@media(max-width: 320px)
+@media(max-width: 400){
+    video{
+        width: 280px;
+        margin-right:0px;
+    }
+}
+@media(max-width: 470px)
 {
    video{
-       width: 280px;
-       
+       width: 320px;     
        margin-right:0px;
    }
    #maps{
@@ -190,7 +181,7 @@ h1{
 p{
     font-size:10px;
 }
- #signup h1,#singup p{
+#signup h1,#singup p{
      margin-top:50px;
  } 
  .footer ul li{
@@ -201,129 +192,22 @@ p{
     width:10px;
 }
 }
-
-/* }
-@media (min-width: 400px){
-    #bestdish1,#bestdish2,#bestdish3,#bestdish4,#bestdish5{
-   
-        margin:0px auto;
-        height:250px;
-    
-        color: white;
-        min-width:300px;
-        padding:0;
-    }
-    #bestdish1{
-        background-image: url(../images/300x300/kabab.jpeg);
-        background-size: cover;    
-    }
-        #bestdish2{
-            background-image: url(../images/300x300/chickenstri.jpeg);
-            background-repeat: no-repeat;
-            background-size: 100%;
-        }
-        #bestdish3{
-            background-image: url(../images/300x300/drumsticks.jpeg);
-            background-size: 100%;
-        }
-        #bestdish4{
-            background-image: url(../images/300x300/kraftrecipe.jpeg);
-            background-size: 100%;
-            text-align:left;            
-        }
-        #bestdish5{
-           background-image: url(../images/300x300/chickenpiece.jpeg);
-           background-size: 100%;
-           text-align:left;
-        }
-}
-@media(min-width:200px){
-    .carousel-caption h4{
-        font-size: 20px;
-    }
-    .carousel-caption p{
-        font-size: 10px;
-    }
+@media(min-width: 1024px){
     #cookingplate h2{
-        font-size: 30px;
+        font-size: 25px;
     }
-
-    
+    #cookingplate button{
+        margin-top:120px;
+        margin-left:170px;
+    }   
+    #address{
+        padding-left: 100px;
+        padding-right:50px;
+    }   
 }
-@media(min-width: 700px){
-    
-    #bestdish1,#bestdish2,#bestdish3,#bestdish4,#bestdish5{
-   
-        margin:0px auto;
-        height:250px;
-  
-        color: white;
-        width: 700px;
-        min-width:300px;
-    }
-    #bestdish1{
-        background-image: url(../images/550x300/kabab.jpeg);
-        background-size: 100%;    
-    }
-        #bestdish2{
-            background-image: url(../images/550x300/chickenstri.jpeg);
-            background-repeat: no-repeat;
-            background-size: 100%;
-        }
-        #bestdish3{
-            background-image: url(../images/550x300/drumsticks.jpeg);
-            background-size: 100%;
-        }
-        #bestdish4{
-            background-image: url(../images/550x300/kraftrecipe.jpeg);
-            background-size: 100%;
-            
-        }
-        #bestdish5{
-           background-image: url(../images/550x300/chickenpiece.jpeg);
-           background-size: 100%;
-        }
-        .carousel-caption h4{
-            font-size: 70px;
-        }
-        .carousel-caption p{
-            font-size: 30px;
-        }
-        #cookingplate h2{
-            font-size: 50px;
-        }
-    }
-@media (min-width:900px){
-    
-    #bestdish1,#bestdish2,#bestdish3,#bestdish4,#bestdish5{
- 
-        margin:0px auto;
-        height:250px;
- 
-        color: white;
-        width: 300px;
-        min-width:300px;
-    }
-    #bestdish1{
-        background-image: url(../images/300x300/kabab.jpeg);
-        
-    }
-        #bestdish2{
-            background-image: url(../images/300x300/chickenstri.jpeg);
-            background-repeat: no-repeat;
-        }
-        #bestdish3{
-            background-image: url(../images/300x300/drumsticks.jpeg);
-        }
-        #bestdish4{
-            background-image: url(../images/300x300/kraftrecipe.jpeg);
-            border-radius: 25px;  
-        }
-        #bestdish5{
-           background-image: url(../images/300x300/chickenpiece.jpeg);
-           
-        }
-        #cookingplate h2{
-            font-size: 60px;
-        }
-} */
+@media(min-width: 1440px){
+    #address{
+        padding-left: 180px;
+        padding-right:150px;
+    }   
+}
